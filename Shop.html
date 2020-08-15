@@ -8,78 +8,136 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">
-				<img src="images/Marketing_4_Growth_Logo.jpg" width="60" height="30" loading="lazy" alt="Company Logo">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="News.html">News</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="Shop.html">Shop</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="Services.html">Services</a>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search Items" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
-			</div>
-		</nav>
-
-
-
-        <!-- Brief description about this page-->
-        <div class="text-center">
-            <div class="container">
-                <h1>Shop</h1>
-                <p>You can purchase items on this page</p>
-            </div>
-        </div>
-
-
-        <!-- Layout using bootstap to present contents-->
         <div class="container">
+
+            <header style="padding-top: 10px;">  <!--Replacing original nav bar-->
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-4 pt-1">
+                        <a class="text-muted" href="#">Subscribe</a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="images/Marketing_4_Growth_Logo.jpg" width="60" height="30" loading="lazy" alt="Company Logo">
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <a class="btn btn-sm btn-outline-secondary" href="https://marketing4growth.com.au/members/login">Member login</a>
+                    </div>
+                </div>
+
+                <div class="nav-scroller py-1 mb-2" style="border-top: 1px solid #e5e5e5; margin-top: 10px;">
+                    <nav class="nav d-flex justify-content-between">
+                        <a class="p-2 text-muted" href="index.html">Home</a>  <!-- <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>-->
+                        <a class="p-2 text-muted" href="News.html">News</a>
+                        <a class="p-2 text-muted" href="shop.html">Shop</a>
+                        <a class="p-2 text-muted" href="#">Services</a>
+                        <a class="p-2 text-muted" href="#">Contact Us</a>
+                    </nav>
+                </div>
+            </header>
+
+
+
             <div class="row">
-                <div class="col-md-4" style="margin-bottom: 20px;">
-                    <div class="card" style="width: 85%; height: 100%;">
-                        <img height="250" class="card-img-top" src="video_icon.jpg" alt="PDF file">
-                        <div class="card-body">
-                            <p class="card-text">$ 10</p>
-                            <a href="User_Delivery_Details.html" class="btn btn-primary">Add to Cart</a>
+
+                <div class="col-lg-3">
+                    <h1 class="my-4">Shop</h1>
+                    <div class="list-group">
+                    <a href="#" class="list-group-item">PDF</a>
+                    <a href="#" class="list-group-item">Video</a>
+                    <a href="#" class="list-group-item">Audio</a>
+                </div>
+
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-9">
+
+                    <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="https://marketing4growth.com.au/images/banner1.jpg" alt="First slide">
+                            </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="col-md-4" style="margin-bottom: 20px;">
-                    <div class="card" style="width: 85%; height: 100%;">
-                        <img height="250" class="card-img-top" src="video_icon.jpg" alt="PDF file">
-                        <div class="card-body">
-                            <p class="card-text">$ 10</p>
-                            <a href="User_Delivery_Details.html" class="btn btn-primary">Add to Cart</a>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-10">
+                            <a href="#"><img class="card-img-top" src="https://marketing4growth.com.au/images/banner1.jpg" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Item One</a>
+                                </h4>
+                                <h5>$24.99</h5>
+                                <p class="card-text">Description for this item</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <a href="CheckOut.html" class="btn btn-primary">Purchase</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4" style="margin-bottom: 20px;">
-                    <div class="card" style="width: 85%; height: 100%;">
-                        <img height="250" class="card-img-top" src="video_icon.jpg" alt="PDF file">
-                        <div class="card-body">
-                            <p class="card-text">$ 10</p>
-                            <a href="User_Delivery_Details.html" class="btn btn-primary">Add to Cart</a>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="https://marketing4growth.com.au/images/banner1.jpg" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Item Two</a>
+                                </h4>
+                                <h5>$24.99</h5>
+                                <p class="card-text">Description for this item</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <a href="CheckOut.html" class="btn btn-primary">Purchase</a>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="https://marketing4growth.com.au/images/banner1.jpg" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Item One</a>
+                                </h4>
+                                <h5>$24.99</h5>
+                                <p class="card-text">Description for this item</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <a href="CheckOut.html" class="btn btn-primary">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
+                <!-- /.row -->
+
             </div>
+                <!-- /.col-lg-9 -->
+
         </div>
+
+
+
     </body>
 </html>
